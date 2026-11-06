@@ -39,20 +39,31 @@ def inserir_ficha(tabuleiro, coluna, jogador):
 def verificar_vitoria(tabuleiro, jogador):
     """Procura 4 fichas seguidas do jogador em todas as direções.
     Retorna a lista das 4 posições vencedoras, ou uma lista vazia."""
+    # Cada par indica quanto avançar na linha (dl) e na coluna (dc):
+    # horizontal, vertical, diagonal descendente e diagonal ascendente.
     direcoes = [(0, 1), (1, 0), (1, 1), (-1, 1)]
+    # Testa cada posição do tabuleiro como possível início de uma sequência.
     for linha in range(LINHAS):
         for coluna in range(COLUNAS):
+            # A partir desta posição, verifica cada uma das direções possíveis.
             for dl, dc in direcoes:
+                # Guarda as posições consecutivas que pertencem ao jogador.
                 posicoes = []
+                # Tenta avançar até quatro casas na direção atual.
                 for passo in range(4):
+                    # Calcula a posição correspondente ao passo atual.
                     l = linha + dl * passo
                     c = coluna + dc * passo
+                    # Confirma que a posição está dentro do tabuleiro e contém
+                    # uma ficha do jogador; caso contrário, encerra esta busca.
                     if 0 <= l < LINHAS and 0 <= c < COLUNAS and tabuleiro[l][c] == jogador:
                         posicoes.append((l, c))
                     else:
                         break
+                # Quatro posições válidas consecutivas significam vitória.
                 if len(posicoes) == 4:
                     return posicoes
+    # Nenhuma sequência vencedora foi encontrada.
     return []
 
 
