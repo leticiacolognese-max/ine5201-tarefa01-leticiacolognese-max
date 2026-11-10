@@ -67,6 +67,16 @@ O GitHub Copilot foi usado no VS Code, pelo painel de chat, como assistente de p
 
 ![Conversa com o Copilot](screenshots/copilot.png)
 
+**Segundo pedido ao Copilot:**
+
+> Sugira melhorias para a função inserir_ficha, mas não altere o código, só explique as sugestões
+
+**O que o Copilot sugeriu:** (escrever aqui, com suas palavras, 1 ou 2 sugestões que ele deu)
+
+**O que achamos:** (escrever se a sugestão faz sentido ou se o código já atende o que a tarefa pede)
+
+![Segunda conversa com o Copilot](screenshots/copilot2.png)
+
 ## Outras ferramentas de IA
 
 Além do GitHub Copilot, utilizamos o Claude (Anthropic) como na configuração do VS Code, do Git e do GitHub, para a revisão do nosso código e também para entender o quais dados precisam estar no README. O Copilot foi usado para documentar e melhorar partes dele.
