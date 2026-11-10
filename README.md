@@ -71,9 +71,9 @@ O GitHub Copilot foi usado no VS Code, pelo painel de chat, como assistente de p
 
 > Sugira melhorias para a função inserir_ficha, mas não altere o código, só explique as sugestões
 
-**O que o Copilot sugeriu:** (escrever aqui, com suas palavras, 1 ou 2 sugestões que ele deu)
+**O que o Copilot sugeriu:** Validar o jogador, definir o contrato para entradas inválidas, entre outros.
 
-**O que achamos:** (escrever se a sugestão faz sentido ou se o código já atende o que a tarefa pede)
+**O que achamos:** Validar o jogador realmente é uma melhoria interessante, mas como o jogo já roda muito bem, não é uma alteração necessária. Mesma situação com definir o contrato para entradas inválidas.
 
 ![Segunda conversa com o Copilot](screenshots/copilot2.png)
 
